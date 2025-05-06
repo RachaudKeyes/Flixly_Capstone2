@@ -1,19 +1,125 @@
-# Capstone Project Two
+# Flixly - a Netflix inspired app
 
-We have broken down the Capstone Project into easy-to-follow steps. Each step of the capstone contains a link with instructions for that step. You may notice this secondCapstone follows a similar pattern to your first Capstone, however, there are key differences. 
+A full-page web application inspired by Netflix that allows users to view a list of popular movies, search for movies, rate and/or favorite movies, and watch the movie trailer. Built using JavaScript - Node - Express - React.
 
-## Overview
-For your second Capstone Project, you’ll build a more complex database-driven website. Most students will choose to develop this app in React and Node, however, Flask/Python is also an option if you tackle a difficult idea. This website will be powered either off of an external API or an API that you build yourself. Your finished capstone will be an integral part of your portfolio; it will demonstrate to potential employers everything you’ve learned from this course.We want you to work on a challenging project that will incorporate all of the full-stack skills you’ve been developing. The goal of this project isn’t to create something that’s never been done before but should be more ambitious than your last capstone. You could potentially create a website similar to one that already exists, but this time, perhaps add a feature that you wish the website had.We do encourage you to be creative when building your site. You’re free to choose any API you’d like to use or build your own. We encourage you to tap into your imagination throughout the project.
+## Setup
 
-## Examples
-You already know about the wealth of APIs available online. Perhaps on this capstone, you can work on one of your ideas that was a bit too complicated for the last project.We also encourage you to create your own API if you cannot find one with the data you are looking for. You can do this through web scraping, importing a CSV, or loading your own data into the API.
+### Local
+#### /backend:
 
-Let’s give you an example of what a site could look like. Say you want to make a website or mobile app that was like Facebook for dogs - something that would allow pet owners to connect with other pets in their neighborhood. First, you could load information into the application about various breeds of dogs, which would populate drop down lists and allow users to sort for the kind of dog they would like to sit. This will help users build the profile for their animal. You could add forms with various information about the pets.You could allow them to upload pictures (dog owners love nothing more than to take pictures of their animals). Most importantly, you could allow the pets to connect with other pets through a graph.Now let’s talk about bells and whistles. What if a user of your Dogbook was leaving town and wanted to find users in their neighborhood to watch their dog for the weekend. You could implement a geographical filtering and simple messaging or request system in order to help Spot find the best pet sitter. And since no one wants their dog watched by some kind of monster, you could implement reviews to see if people recommend this sitter. There are a million different features you could add!Verified users, so celebrities could show off their dogs. Hafthor Bjornsson, the actor who plays the Mountain on Game ofThrones, has an adorable pomeranian and people demand picture proof! You could implement an adoption system so people can give shelter pets a good home. Of course, adding in all of these features would be beyond the scope of this project, but you should expect this app to have more functionality than the last Capstone
+Node version and package.json install:
+```
+$ nvm use 22
+```
+```
+$ npm install
+```
 
-## Guidelines
+Set up the database:  
 
-1. You can use any technology we’ve taught you in the course, and there’s nothing stopping you from using outside libraries are services.That being said, we recommend you use React, and Node.js for this Capstone.If you completed the optional Redux unit, we recommend you use Redux as well. You can useFlask/Python but will be expected to make a much more fully featured application than last time.
-2. Every step of the project has submissions. This will alert your mentor to evaluate your work. Pay attention to the instructions so you submit the right thing. You will submit the link to your GitHub repo several times, this is for your mentor’s convenience. Your URL on GitHub is static and will not change.
-3. The first two steps require mentor approval to proceed, but after that, you are free to continue working on the project after you submit your work. For instance, you don’t need your mentor to approve your database schema before you start working on your site. Likewise, you don’t need your mentor to approve the first iteration of your site before you start polishing it.
-4. If you get stuck, there is a wealth of resources at your disposal. The course contains all of the material you will need to complete this project, but a well-phrased Google search might yield you an immediate solution to your problem. Don’t forget that your Slack community, TAs, and your mentor there to help you out.
-5.Make sure you use a free API or create your own API and deploy your project on Heroku, so everyone can see your work!
+ ```
+$ psql < flixly.sql 
+```  
+
+Start server (localhost:3001)
+```
+$ npm start
+```
+
+#### /frontend:
+
+Node version and package.json install:
+```
+$ nvm use 12
+```
+```
+$ npm install
+```
+
+Start server (localhost:3000)
+```
+$ npm start
+```
+
+### Render
+Click the link for Render live server app:  
+
+[Flixly](https://foodtrucklocator.onrender.com)
+
+## App Features:
+
+All app features are intended to create an easy-to-use app for movie lovers. After the user-flow, see future updates planned for Flixly.
+
+### Navigation Bar:  
+
+*   Click **Flixly** to go to generic homepage. If logged out, you will see **Sign up** and **Login** buttons.
+*   Click **Login** to go to login form. Click **Sing Up** to go to signup form.
+*   Click **Movies** to view a list of popular movies. Each movie has a poster with limited details about the movie.
+*   Click **Favorites** to view a list of your favorited movies. Each movie has a poster with limited details about the movie.
+*   Click **Profile** to view/edit your account details. Username cannot be changed.  
+*   Click **Log Out** to log out of your account.
+
+<img src="./frontend/public/readme/homepage.png" width="75%" height="75%" alt="homepage">
+
+<img src="./frontend/public/readme/signup.png" width="75%" height="75%" alt="signup">
+
+<img src="./frontend/public/readme/login.png" width="75%" height="75%" alt="login">
+
+### Movies Tab:
+
+*   View a list of popular movies. Each movie has a poster with limited details about the movie.
+*   **Movies** has search capabilities - enter a title to view a list of movies based on the search term(s). Each movie has a poster with limited details about the movie.
+*   Click on a movie to view the movie details page. You have the following options:  
+    *   Favorite or Un-favorite the movie.
+    *   Rate the movie (0 - 5). If you have already rate the movie, you can edit or delete the rating.
+    *   Play movie by clicking on the poster or **Play Movie** button. You will be directed to a viewing screen where you can make the video fullscreen.
+
+<img src="./frontend/public/readme/movies.png" width="75%" height="75%" alt="movies">
+
+<img src="./frontend/public/readme/search.png" width="75%" height="75%" alt="search">
+
+<img src="./frontend/public/readme/movieDetails.png" width="75%" height="75%" alt="movieDetails">
+
+<img src="./frontend/public/readme/rating.png" width="75%" height="75%" alt="rating">
+
+<img src="./frontend/public/readme/movieDetails2.png" width="75%" height="75%" alt="movieDetails2">
+
+<img src="./frontend/public/readme/play.png" width="75%" height="75%" alt="play">
+
+### Favorites Tab:
+
+*   View a list of your favorited movies. Each movie has a poster with limited details about the movie. NOTE: No search functionality.
+*   Click on a movie to view the movie details page with the same options listed in the **Movies** tab.
+
+<img src="./frontend/public/readme/favorites.png" width="75%" height="75%" alt="favorites">
+
+
+### Profile Tab:
+
+*   View you account details with the options to change: first name, last name, email, profile image, and password. *NOTE: cannot change username.
+
+<img src="./frontend/public/readme/profile.png" width="75%" height="75%" alt="profile">
+
+## APIs Used:
+
+*   TMDB API
+
+## Technology Used:
+
+*   JavaScript
+*   Node
+*   Express
+*   React
+*   Bootstrap
+*   FontAwesome
+
+## Limitations
+
+*   The app has not been styled for smaller screens yet.
+*   The app is designed for the Quad City area only with capablity to expand due to interactive map
+
+## Future Goals:
+
+*   Classify trucks by category, enabling category search queries.
+*   Search by currently open or rating.
+*   Create a Schedule for User (Business) so the user can update location and hours of operation on a weekly basis rather than daily.

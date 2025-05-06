@@ -53,7 +53,7 @@ function AddRatingForm() {
     return (
       <div className="SignupForm">
         <div className="container col-md-6 offset-md-3 col-lg-4 offset-lg-4">
-          <h2 className="mb-3 mt-3 bg-light">Rate Movie</h2>
+          <h1 className="mb-3 mt-3 text-light text-center">Rate Movie</h1>
           <div className="card">
             <div className="card-body">
               <form onSubmit={ handleSubmit }>
@@ -90,7 +90,7 @@ function AddRatingForm() {
 
                 <button
                     type="submit"
-                    className="btn btn-primary float-right"
+                    className="btn btn-danger float-right"
                     onSubmit={ handleSubmit }
                 >
                   Submit

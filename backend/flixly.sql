@@ -1,5 +1,5 @@
 \echo 'Delete and recreate flixly db?'
-\prompt 'Return for yes or control-C to cancel > ' foo
+\prompt 'Return for yes or control-Z to cancel > ' foo
 
 DROP DATABASE flixly;
 CREATE DATABASE flixly;
@@ -9,7 +9,7 @@ CREATE DATABASE flixly;
 
 
 \echo 'Delete and recreate flixly_test db?'
-\prompt 'Return for yes or control-C to cancel > ' foo
+\prompt 'Return for yes or control-Z to cancel > ' foo
 
 DROP DATABASE flixly_test;
 CREATE DATABASE flixly_test;
