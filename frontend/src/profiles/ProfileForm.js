@@ -140,16 +140,6 @@ function ProfileForm() {
               </div>
 
               <div className="form-group">
-                <label>Password</label>
-                <input
-                    name="password"
-                    className="form-control"
-                    value={formData.password}
-                    onChange={handleChange}
-                />
-              </div>
-
-              <div className="form-group">
                 <label>Confirm password to make changes:</label>
                 <input
                     type="password"
