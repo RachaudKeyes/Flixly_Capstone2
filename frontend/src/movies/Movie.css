@@ -1,0 +1,12 @@
+.MoviePlayBody {
+    text-align: center;
+}
+
+.MoviePlayBody iframe {
+    width: 50rem;
+    height: 30rem;
+}
+
+.MoviePlayBody button {
+    font-size: 5rem;
+}

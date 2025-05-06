@@ -1,0 +1,12 @@
+.Homepage {
+    /* put around the vertical center of page */
+    height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+.Homepage h1 {
+  font-family: Sonsie One, cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}

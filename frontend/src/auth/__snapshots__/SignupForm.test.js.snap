@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="SignupForm"
+  >
+    <div
+      class="container col-md-6 offset-md-3 col-lg-4 offset-lg-4"
+    >
+      <h1
+        class="mb-3 mt-4 text-center text-light"
+      >
+        Signup
+      </h1>
+      <div
+        class="card bg-dark text-light"
+      >
+        <div
+          class="card-body"
+        >
+          <form>
+            <div
+              class="form-group"
+            >
+              <label>
+                Username
+              </label>
+              <input
+                class="form-control"
+                name="username"
+                required=""
+                value=""
+              />
+            </div>
+            <div
+              class="form-group"
+            >
+              <label>
+                Password
+              </label>
+              <input
+                class="form-control"
+                name="password"
+                required=""
+                type="password"
+                value=""
+              />
+            </div>
+            <div
+              class="form-group"
+            >
+              <label>
+                First Name
+              </label>
+              <input
+                class="form-control"
+                name="firstName"
+                required=""
+                value=""
+              />
+            </div>
+            <div
+              class="form-group"
+            >
+              <label>
+                Last Name
+              </label>
+              <input
+                class="form-control"
+                name="lastName"
+                required=""
+                value=""
+              />
+            </div>
+            <div
+              class="form-group"
+            >
+              <label>
+                Email
+              </label>
+              <input
+                class="form-control"
+                name="email"
+                required=""
+                value=""
+              />
+            </div>
+            <div
+              class="form-group"
+            >
+              <label>
+                Profile Image
+              </label>
+              <input
+                class="form-control"
+                name="profileImage"
+                required=""
+                value=""
+              />
+            </div>
+            <button
+              class="btn btn-danger float-right"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

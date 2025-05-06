@@ -1,0 +1,37 @@
+.Navigation {
+  background-color: rgb(145, 0, 0);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+}
+
+.navbar-brand {
+  font-family: Sonsie One, cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+.navbar-brand:hover {
+  color: black;
+}
+  
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.nav-link:hover {
+  color: rgb(212, 178, 178);
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-item {
+  border-left: 0.1rem solid white;
+  padding-left: 2rem;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: white;
+}
